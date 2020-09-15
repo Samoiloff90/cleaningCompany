@@ -1,0 +1,96 @@
+.extended-price
+  padding-top: 50px
+  padding-bottom: 90px
+.price
+  margin: 0 auto
+  max-width: 1118px
+  
+  border-radius: 10px
+  background-color: $gray2
+  box-shadow: 0px 6px 9.4px 0.6px $shadow
+  &__wrap-btn
+    display: flex
+    // flex-wrap: wrap
+  &__btn
+    padding: 20px 10px
+    background-color: $main-light
+    color: $main-dark
+    border-radius: 10px
+    border: 1px solid $accent
+    width: 280px
+    font-size: 20px
+    +reg
+    text-align: center
+    cursor: pointer
+    &_active
+      color: $main-light
+      background-color: $accent
+
+.price-info
+  // display: flex
+  padding: 2.90em 2.809em
+  &__title
+    margin-bottom: 33px
+  &__text
+    line-height: 1.9
+
+.price-info-rates
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  padding-bottom: 2.90em
+  margin-bottom: 50px
+  position: relative
+  &__meters
+    max-width: 172px
+  &::before
+    content: ""
+    position: absolute
+    width: 109%
+    height: 1px
+    background-color: $accent
+    opacity: 0.4
+    bottom: 0
+  &::after
+    content: ""
+    position: absolute
+    width: 109%
+    height: 1px
+    background-color: $accent
+    opacity: 0.4
+    top: 15%
+    
+    
+
+.price-info-have
+  display: flex
+  flex-wrap: wrap
+  padding-left: 25px
+  > li
+    list-style-image: url(../img/ok.png)
+    list-style-type: square
+    padding-left: 5px
+  &__item
+    font-size: 15px
+    width: 45%
+    margin: 0px 0px 30px 30px
+  &-extra
+    padding-left: 50px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+
+
+@media (max-width: 1100px)
+  .container
+    padding: 0px 15px
+  .price__wrap-btn
+    flex-direction: column
+  .price__btn
+    width: 100%
+@media (max-width: 768px)
+  .price-info-have__item
+    width: 100%
+@media (max-width: 425px)
+  .container
+    padding: 0px

@@ -1,0 +1,43 @@
+.question
+  background: url("../img/questions/questions.jpg") no-repeat top center
+  padding-bottom: 80px
+  &__container
+    padding: 0px 15px
+  &__title
+    color: $main-light
+  &__subtitle
+    color: $main-light
+    text-align: center
+    margin-bottom: 36px
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-around
+    flex-wrap: wrap
+  &__input
+    margin: 0px 15px 20px 0px
+    width: 366px
+    height: 66px
+  &__button
+    width: 366px
+    height: 66px
+    margin-bottom: 20px
+
+@media (max-width: 1100px)
+  .question
+    padding-top: 90px
+    padding-bottom: 50px
+    &__form
+      padding: 0 15px
+      flex-direction: column
+    &__input
+      margin-right: 0px
+    &__button
+      margin-bottom: 0
+
+@media (max-width: 400px)
+  .question
+    &__input
+      width: 100%
+    &__button
+      width: 100%

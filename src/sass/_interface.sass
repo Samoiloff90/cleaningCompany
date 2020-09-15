@@ -1,0 +1,329 @@
+html
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+img
+  width: 100%
+
+.container
+  max-width: 1170px
+  margin: 0 auto
+
+*,
+*::after,
+*::before
+  box-sizing: inherit
+
+h1,h2,h3,h4,h5,h6
+  margin: 0
+
+a
+  text-decoration: none
+
+p 
+  margin: 0
+
+ul,
+li
+  margin: 0
+  padding: 0
+  list-style: none
+  outline: none
+
+input,
+button
+  padding: 0
+  outline: none
+  &:active
+    outline: none
+  &:focus
+    outline: none
+
+body
+  +reg
+  min-width: 320px
+  overflow-x: hidden
+  font-size: 16px
+  line-height: 1.2
+  // line-height: 18px
+  color: $main-dark
+
+// Button
+.btn
+  min-width: 259px
+  min-height: 66px
+  border-radius: 15px
+  letter-spacing: 1.5px
+  background: $accent2;
+  background: -moz-linear-gradient(top, $accent2 0%, rgba(70,214,74,1) 80%, rgba(70,214,74,1) 100%)
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, $accent2), color-stop(80%, rgba(70,214,74,1)), color-stop(100%, rgba(70,214,74,1)))
+  background: -webkit-linear-gradient(top, $accent2 0%, rgba(70,214,74,1) 80%, rgba(70,214,74,1) 100%)
+  background: -o-linear-gradient(top, $accent2 0%, rgba(70,214,74,1) 80%, rgba(70,214,74,1) 100%)
+  background: -ms-linear-gradient(top, $accent2 0%, rgba(70,214,74,1) 80%, rgba(70,214,74,1) 100%)
+  background: linear-gradient(to bottom, $accent2 0%, rgba(70,214,74,1) 80%, rgba(70,214,74,1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5ef766', endColorstr='#46d64a', GradientType=0 )
+  border: none
+  cursor: pointer
+  // text-transform: uppercase
+  color: $white
+  font-size: 21px
+  +bold
+  &:hover
+    box-shadow: 0px 3px 13px 0.4px rgba(94,247,102,0.7)
+    transition: all .5s
+
+// slider
+.arrows
+  font-size: 60px
+  color: $main-light
+  display: flex
+  justify-content: center
+  cursor: pointer
+  &__left
+    position: absolute
+    left: 20px
+    bottom: 45%
+  &__right
+    position: absolute
+    right: 20px
+    bottom: 45%
+    // bottom: 260px
+.slick-dots
+  display: flex
+  justify-content: center
+  position: absolute
+  bottom: 40px
+  left: 0
+  right: 0
+  button
+    font-size: 0
+    border: none
+    background-color: $main-light
+    padding: 0
+    width: 27px
+    height: 27px
+    border-radius: 50%
+    margin: 0 10px
+    opacity: 0.5
+.slick-active
+  button
+    background-color: $main-light
+    border: 1px solid $shadow
+    opacity: 1
+
+// section
+.section
+  padding: 100px 0px 0px 0px
+
+// section-title
+.section-title
+  font-size: 30px
+  margin-bottom: 60px
+  text-transform: uppercase
+  text-align: center
+  +bold
+
+// input
+
+.input
+  border: none
+  padding: 23px 26px
+  font-size: 15px
+  border-radius: 10px
+  // opacity: 0.6
+  background-color: $main-light
+  border: 1px solid $border
+  font-size: 15px
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.8
+  letter-spacing: normal
+
+input
+  width: 100%
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($main-dark, 0.5)
+  display: flex
+  display: none
+  z-index: 999;
+  &__title
+    margin-bottom: 40px
+  &__subtitle
+    display: block
+    text-align: center
+    margin-bottom: 30px
+  &__button
+    width: 100%
+    min-height: 70px
+    margin-bottom: 31px
+    border: none
+    outline: none
+    cursor: pointer
+    +bold
+    &:hover
+      background-color: lighten($accent, 10%)
+      cursor: pointer
+      border: none
+      outline: none
+  &__call
+    display: block
+    text-align: center
+  &__phone
+      display: block
+      margin: 0
+      color: $accent
+      font-size: 24px
+      text-decoration: none
+      margin-top: 10px
+      text-align: center
+      +bold
+  &__input
+    width: 100%
+    margin-bottom: 15px
+  &_active
+    display: flex
+  &-dialog
+    position: relative
+    margin: auto
+    max-width: 450px
+    width: 90%
+    min-width: 200px
+    background-color: $white
+    // padding: 4.5vw 3vw
+    padding: 40px
+    border-radius: 8px
+  &-dialog
+    top: 10%  
+    &__close
+      background-color: rgba($main-dark, 0)
+      position: absolute
+      top: 4px
+      right: 8px
+      border: none
+      color: $accent
+      font-size: 45px
+      line-height: 0.6
+      &:hover
+        cursor: pointer
+
+// animation
+.show
+  display: block
+
+.hide
+  display: none
+
+.fade
+  animation-name: fade
+  animation-duration: 0.8s
+
+@keyframes fade
+  from
+    opacity: 0.1
+
+  to
+    opacity: 1
+
+// validation
+label.error
+  font-size: 12px
+  color: red
+  position: absolute
+  color: rgba(239, 242, 245, 0)
+
+input.error 
+  border: 1px solid red !important
+
+input.valid
+  border: 1px solid green !important
+
+
+// modal
+
+#loader
+  position: fixed
+  left: 0px
+  top: 0px
+  width: 100%
+  height: 100%
+  background: rgba(240, 240, 240, 0.91)
+  overflow: hidden
+  display: none
+  z-index: 99999
+
+#loader img
+  position: absolute
+  width: 50px
+  height: 50px
+  left: 50%
+  margin-left: -25px
+  top: 50%
+  margin-top: -25px
+
+#overlay
+  position: fixed
+  display: none
+  width: 100%
+  height: 100%
+  background-color: rgba($main-dark, 0.5)
+  left: 0px
+  top: 0px
+  cursor: pointer
+  z-index: 9998
+
+#thx 
+  background: #fff
+  position: absolute
+  left: 50%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  max-width: 90%
+  width: 400px
+  padding: 30px
+  text-align: center
+  margin-top: -20px
+
+@media (max-width: 756px)
+  body
+    line-height: 1.2
+  // section
+  .section
+    padding: 87px 0px 0px 0px
+  .arrows
+    display: none
+
+@media (max-width: 478px)
+  .btn
+    min-width: 129px
+    min-height: 33px
+    padding: 23px 43px
+    width: 100%
+  // section
+  .section
+    padding: 51px 0px 0px 0px
+  // section-title
+  .section-title
+    font-size: 25px
+    margin-bottom: 40px
+
+@media (max-width: 430px)
+  .btn
+    font-size: 19px
+  .modal
+    &__title
+      font-size: 23px
+      margin-bottom: 25px
+    &__button
+      font-size: 16px
+    &__call
+      font-size: 15px
+    &__phone
+      font-size: 20px
+  .modal-dialog
+    padding: 40px 12px   

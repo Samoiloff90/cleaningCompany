@@ -1,0 +1,94 @@
+// .container
+//   margin: 0 auto
+//   padding: 15px 0px 15px 0px
+.header
+  background-color: $main-light
+  box-shadow: 0px 6px 9.4px 0.6px $shadow
+  padding: 20px 55px 20px 55px
+  position: fixed
+  top: 0
+  right: 0
+  width: 100%
+  z-index: 50
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+.logo__img
+  max-width: 90%
+
+.contacts
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  font-size: 15px
+  position: relative
+  text-align: end
+  &__city
+    margin-bottom: 5px
+  &__phone
+    font-size: 19px
+    color: $accent
+    +bold
+    margin-bottom: 5px
+  &-header
+    &::before
+      content: url('../img/header/bubble.png')
+      position: absolute
+      right: 160%
+      top: -75%
+
+.menu
+  display: flex
+  transition: all .5s
+  &__item
+    margin-right: 5px
+    &:last-child
+      margin-right: 0
+  &__link
+    padding: 12px 15px
+    color: $main-dark
+    cursor: pointer
+    &_active
+      transition: all .3s
+      color: $accent
+
+// @media (max-width: 640px)
+//   .container
+//     padding: 0 30px
+//   .header
+//     &__inner
+//       min-width: 100px
+// @media (max-width: 640px)
+//   .container
+//     padding: 0 30px
+// @media (max-width: 380px)
+
+
+@media (max-width: 1020px)
+  .menu
+    display: none
+
+@media (max-width: 610px)
+  .contacts
+    &-header
+      &::before
+        display: none
+  .header
+    padding: 15px
+
+@media (max-width: 335px)
+  .contacts
+    font-size: 14px
+    &__city
+      margin: 0
+    &__phone
+      font-size: 17px
+      color: $accent
+      +bold
+      margin-bottom: 0px
+
+
+
+
+

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Атмосфера чистоты</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/icon.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b104258a25.js" crossorigin="anonymous"></script>
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img class="logo__img" src="img/logo/log.png" alt="Атмосфера чистоты">
+        </a>
+      </div>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#main" class="menu__link">
+            Главная
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#advantage" class="menu__link">
+            Наши преимущества
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#main-service" class="menu__link">
+            Наши услуги
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#main-price" class="menu__link">
+            Прайс
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#main-customers" class="menu__link">
+            Наши клиенты
+          </a>
+        </li>
+      </ul>
+      <div class="contacts contacts-header">
+        <span class="contacts__city">
+          г. Самара
+        </span>
+        <a href="tel:+7(960)822-33-00" class="contacts__phone">
+          +7 (960) 822-33-00
+        </a>
+        <span class="contacts__time">
+          Круглосуточно без выходных
+        </span>
+      </div>
+    </div>
+  </header>
+  <section class="offer" id="main">
+    <div class="top-slider">
+      <div class="top-slider__item slider-order">
+        <div class="slider-order__wrap">
+        <h1 class="top-slider__title">
+          <span>
+            закажи сейчас со скидкой 50%
+          </span>
+          Генеральную уборку квартиры
+        </h1>
+        <div class="top-slider__text">
+          Наша команда профессионалов качественно и в указанный срок наведет порядок. Мы справляемся с любыми
+          загрязнениями!
+        </div>
+        <button class="btn" data-parent="Генеральная по акции" data-target="#myModal">
+          Заказать
+        </button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="arrows">
+      <div class="arrows__left">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="arrows__right">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div> -->
+  </section>
+  <section class="advantages section" id="advantage">
+    <div class="container">
+      <h2 class="advantages__title section-title">
+        Наши преимущества
+      </h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <div class="advantages__img">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+          <h4 class="advantages__subtitle">
+            6 лет на рынке
+          </h4>
+          <p class="advantages__text">
+            Наша компания имеет бесценный опыт на рынке клининговых услуг
+          </p>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__img">
+            <i class="fas fa-thumbs-up"></i>
+          </div>
+          <h4 class="advantages__subtitle">
+            Доступные цены
+          </h4>
+          <p class="advantages__text">
+            Мы следим за рынком данных услуг и держим наши цены конкурентоспособными
+          </p>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__img">
+            <i class="fa fa-leaf" aria-hidden="true"></i>
+          </div>
+          <h4 class="advantages__subtitle">
+            Качественные материалы
+          </h4>
+          <p class="advantages__text">
+            Безопасные, профессиональные моющие и чистящие средства
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="service section" id="main-service">
+    <div class="container">
+      <h2 class="service__title section-title">
+        Наши услуги
+      </h2>
+      <ul class="service__list">
+        <!-- one -->
+        <li class="service__item">
+          <div class="service__price service__price-window">
+            <p class="service__price-number">
+              от 200 р.
+            </p>
+          </div>
+          <div class="service__info">
+            <h3 class="service__headline">
+              Мытье окон
+            </h3>
+            <div class="service-wrap">
+              <p class="service__description">
+                Взгляните на мир через чистые окна и впустите в вашу квартиру солнечный свет!
+              </p>
+              <button class="service__btn btn" data-parent="Мытье окон" data-target="#myModal">
+                Заказать
+              </button>
+            </div>
+          </div>
+        </li>
+        <!-- two -->
+        <li class="service__item">
+          <div class="service__price service__price-express">
+            <p class="service__price-number">
+              от 2490 р.
+            </p>
+          </div>
+          <div class="service__info">
+            <h3 class="service__headline">
+              Экспресс уборка
+            </h3>
+            <div class="service-wrap">
+              <p class="service__description">
+                Выдалась загруженная неделя и на уборку совсем нет времени? Доверьте её нам!
+              </p>
+              <button class="service__btn btn" data-parent="Экспресс уборка" data-target="#myModal">
+                Заказать
+              </button>
+            </div>
+          </div>
+        </li>
+        <!-- three -->
+        <li class="service__item">
+          <div class="service__price service__price-weekly">
+            <p class="service__price-number">
+              от 1490 р.
+            </p>
+          </div>
+          <div class="service__info">
+            <h3 class="service__headline">
+              Еженедельная уборка
+            </h3>
+            <div class="service-wrap">
+              <p class="service__description">
+                Мы подберем индивидуальный график и избавим Вас от этой рутины!
+              </p>
+              <button class="service__btn btn" data-parent="Еженедельная уборка" data-target="#myModal">
+                Заказать
+              </button>
+            </div>
+          </div>
+        </li>
+        <!-- four -->
+        <li class="service__item">
+          <div class="service__price service__price-bathroom">
+            <p class="service__price-number">
+              от 1490 р.
+            </p>
+          </div>
+          <div class="service__info">
+            <h3 class="service__headline">
+              Мытье ванной
+            </h3>
+            <div class="service-wrap">
+              <p class="service__description">
+                Придайте Вашей ванной новый вид. Мы избавим от любых загрязнений!
+              </p>
+              <button class="service__btn btn" data-parent="Мытье ванной" data-target="#myModal">
+                Заказать
+              </button>
+            </div>
+          </div>
+        </li>
+        <!-- five -->
+        <li class="service__item">
+          <div class="service__price service__price-general">
+            <p class="service__price-number">
+              от 3290 р.
+            </p>
+          </div>
+          <div class="service__info">
+            <h3 class="service__headline">
+              Генеральная уборка
+            </h3>
+            <div class="service-wrap">
+              <p class="service__description">
+                Беспорядок после вечеринки или переезда? Наша команда исправит это!
+              </p>
+              <button class="service__btn btn" data-parent="Генеральная уборка" data-target="#myModal">
+                Заказать
+              </button>
+            </div>
+          </div>
+        </li>
+        <!-- six -->
+        <li class="service__item">
+          <div class="service__price service__price-fridge">
+            <p class="service__price-number">
+              от 500р.
+            </p>
+          </div>
+          <div class="service__info">
+            <h3 class="service__headline">
+              Мытье холодильника
+            </h3>
+            <div class="service-wrap">
+              <p class="service__description">
+                Избавим Ваш холодильник от неприятных запахов и грязи!
+              </p>
+              <button class="service__btn btn" data-parent="Мытье холодильника" data-target="#myModal">
+                Заказать
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="extended-price section" id="main-price">
+    <div class="container">
+      <h2 class="extended-price__title section-title">
+        Расширенный прайс
+      </h2>
+      <div class="price">
+        <div class="price__wrap-btn">
+          <div class="price__btn price__btn_active">
+            Еженедельная уборка
+          </div>
+          <div class="price__btn">
+            Эксперасс уборка
+          </div>
+          <div class="price__btn">
+            Генеральная уборка
+          </div>
+          <div class="price__btn">
+            Дополнительные работы
+          </div>
+        </div>
+        <!-- one -->
+        <div class="price-info">
+          <div class="price-info-rates">
+            <div class="price-info-rates__meters">
+              <h4 class="price-info__title">
+                Метраж
+              </h4>
+              <p class="price-info__text">
+                до 40 кв.м<br>
+                до 55 кв.м.<br>
+                до 80 кв.м.<br>
+                от 81 до 100 кв.м.
+              </p>
+            </div>
+            <div class="price-info-rates__numbers">
+              <h4 class="price-info__title">
+                Стоимость
+              </h4>
+              <p class="price-info__text">
+                1490 руб.<br>
+                1890 руб.<br>
+                2190 руб.<br>
+                2490 руб.
+              </p>
+            </div>
+          </div>
+          <ul class="price-info-have">
+            <li class="price-info-have__item">
+              сухая уборка пола (во всей квартире);
+            </li>
+            <li class="price-info-have__item">
+              влажная уборка пола (во всей квартире);
+            </li>
+            <li class="price-info-have__item">
+              влажная уборка зеркал;
+            </li>
+            <li class="price-info-have__item">
+              протирка плинтусов;
+            </li>
+            <li class="price-info-have__item">
+              протирка дверных ручек;
+            </li>
+            <li class="price-info-have__item">
+              обеспылевание /влажная уборка горизонтальных
+              поверхностей (на высоте до 1,5 метра);
+            </li>
+            <li class="price-info-have__item">
+              вынос мусора (не более 2-х пакетов 60 литров)
+            </li>
+          </ul>
+        </div>
+        <!-- two express -->
+        <div class="price-info">
+          <div class="price-info-rates">
+            <div class="price-info-rates__meters">
+              <h4 class="price-info__title">
+                Метраж
+              </h4>
+              <p class="price-info__text">
+                до 40 кв.м<br>
+                до 55 кв.м.<br>
+                до 80 кв.м.<br>
+                от 81 до 100 кв.м.
+              </p>
+            </div>
+            <div class="price-info-rates__numbers">
+              <h4 class="price-info__title">
+                Стоимость
+              </h4>
+              <p class="price-info__text">
+                2490 руб.<br>
+                2990 руб.<br>
+                3390 руб.<br>
+                3890 руб.
+              </p>
+            </div>
+          </div>
+          <ul class="price-info-have">
+            <li class="price-info-have__item">
+              сухая уборка пола (во всей квартире);
+            </li>
+            <li class="price-info-have__item">
+              влажная уборка пола (во всей квартире);
+            </li>
+            <li class="price-info-have__item">
+              протирка ванной, санузла, душевой кабины;
+            </li>
+            <li class="price-info-have__item">
+              протирка смесителей (доведение до блеска);
+            </li>
+            <li class="price-info-have__item">
+              влажная уборка зеркал;
+            </li>
+            <li class="price-info-have__item">
+              обеспылевание /влажная уборка горизонтальных
+              поверхностей (на высоте до 1,5 метра);
+            </li>
+            <li class="price-info-have__item">
+              протирка дверных ручек;
+            </li>
+            <li class="price-info-have__item">
+              протирка плинтусов;
+            </li>
+            <li class="price-info-have__item">
+              вынос мусора (не более 3-х пакетов 120 литров).
+            </li>
+          </ul>
+        </div>
+        <!-- three general -->
+        <div class="price-info">
+          <div class="price-info-rates">
+            <div class="price-info-rates__meters">
+              <h4 class="price-info__title">
+                Метраж
+              </h4>
+              <p class="price-info__text">
+                до 40 кв.м<br>
+                до 55 кв.м.<br>
+                до 80 кв.м.<br>
+                от 81 до 100 кв.м.
+              </p>
+            </div>
+            <div class="price-info-rates__numbers">
+              <h4 class="price-info__title">
+                Стоимость
+              </h4>
+              <p class="price-info__text">
+                3290 руб.<br>
+                3790 руб.<br>
+                4290 руб.<br>
+                4990 руб.
+              </p>
+            </div>
+          </div>
+          <ul class="price-info-have">
+            <li class="price-info-have__item">
+              сухая уборка пола (во всей квартире);
+            </li>
+            <li class="price-info-have__item">
+              влажная уборка пола (во всей квартире) с применением парогенератора;
+            </li>
+            <li class="price-info-have__item">
+              протирка ванной, санузла, душевой кабины;
+            </li>
+            <li class="price-info-have__item">
+              протирка смесителей (доведение до блеска);
+            </li>
+            <li class="price-info-have__item">
+              влажная уборка зеркал;
+            </li>
+            <li class="price-info-have__item">
+              обеспылевание /влажная уборка горизонтальных
+              поверхностей (на высоте до 2,5 метра);
+            </li>
+            <li class="price-info-have__item">
+              обеспылевание /влажная уборка потолка (при возможности);
+            </li>
+            <li class="price-info-have__item">
+              протирка и полировка дверных ручек;
+            </li>
+            <li class="price-info-have__item">
+              протирка плинтусов;
+            </li>
+            <li class="price-info-have__item">
+              влажная уборка всех окон с внутренней стороны;
+            </li>
+            <li class="price-info-have__item">
+              обеспылевание всей мягкой мебели;
+            </li>
+            <li class="price-info-have__item">
+              вынос мусора (не более 3-х пакетов 60 литров).
+            </li>
+          </ul>
+        </div>
+        <!-- four -->
+        <div class="price-info">
+          <ul class="price-info-have">
+            <li class="price-info-have__item">
+              мытье холодильника – от 300 руб.;
+            </li>
+            <li class="price-info-have__item">
+              мытье микроволновой печи – от 200 руб.;
+            </li>
+            <li class="price-info-have__item">
+              мытье варочной панели – от 300 руб.;
+            </li>
+            <li class="price-info-have__item">
+              мытье духового шкафа – от 400 руб.;
+            </li>
+            <li class="price-info-have__item">
+              мытье фасадов кухонных шкафов – от 50 руб. за шт.;
+            </li>
+            <li class="price-info-have__item">
+              мытье внутри кухонных шкафов – от 50 руб. за шт.;
+            </li>
+            <li class="price-info-have__item">
+              мытье окон – от 200 руб.;
+            </li>
+            <li class="price-info-have__item">
+              мытье раковины – от 200 руб.;
+            </li>
+            <li class="price-info-have__item">
+              мытье смесителя маленький/большой – от 100/200 руб.;
+            </li>
+            <li class="price-info-have__item">
+              мытье унитаза и бачка – от 300 руб.;
+            </li>
+            <li class="price-info-have__item">
+              мытье ванной – от 400 руб.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="step section">
+    <div class="container">
+      <h2 class="section-title step__title">
+        Три обязательных шага для чистоты
+      </h2>
+      <div class="step__content">
+        <ul class="steps">
+          <li class="steps__item">
+            <span class="steps__item-number">
+              1
+            </span>
+            Закажите звонок менеджера
+          </li>
+          <li class="steps__item">
+            <span class="steps__item-number">
+              2
+            </span>
+            Назначьте дату для уборки
+          </li>
+          <li class="steps__item">
+            <span class="steps__item-number">
+              3
+            </span>
+            Дождитесь наших сотрудников
+          </li>
+        </ul>
+        <div class="feedback">
+          <h3 class="feedback__title">
+            Закажите звонок прямо сейчас
+          </h3>
+          <form action="mail.php" id="feedback-form" class="form feedback__form js-form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="form_subject" value="на три шага чистоты">
+            <!-- END Hidden Required Fields -->
+            <div class="feedback__input">
+              <input type="text" name="username" required minlength="2" maxlength="15" class="input feedback__input-form"
+                placeholder="Ваше имя">
+              <input type="tel" name="userphone" required class="input feedback__input-form phone" placeholder="Ваш телефон">
+            </div>
+            <button class="btn feedback__button" data-submit>
+              Заказать звонок
+            </button>
+            <div class="feedback__additional">
+              <p class="feedback__additional-text">
+                Наш менеджер перезвонит
+                Вам в ближайшее время
+              </p>
+              <p class="feedback__additional-text">
+                или перезвоните нам сами
+                <span>+7 (960) 822-33-00</span>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section customers" id="main-customers">
+    <div class="container">
+      <h2 class="customers__title section-title">
+        Нам доверяют
+      </h2>
+      <ul class="brands">
+        <li class="brands__item brands__item_active">
+          <img src="img/brand/koton.jpg" alt="Koton" class="brands__img">
+        </li>
+        <li class="brands__item">
+          <img src="img/brand/mango.jpg" alt="Mango" class="brands__img">
+        </li>
+        <li class="brands__item">
+          <img src="img/brand/gloria.jpg" alt="GloriaJeans" class="brands__img">
+        </li>
+        <li class="brands__item">
+          <img src="img/brand/kill.jpg" alt="KillFish" class="brands__img">
+        </li>
+        <li class="brands__item">
+          <img src="img/brand/armani.jpg" alt="Armani" class="brands__img">
+        </li>
+        <li class="brands__item">
+          <img src="img/brand/modi.jpg" alt="Modi" class="brands__img">
+        </li>
+      </ul>
+      <div class="history">
+        <p class="history__text">
+          Клининговая компания "Атмосфера чистоты" входит в группу компаний
+          "Без забот" и специализируется на услугах по уборке помещений для населения с 2014 года.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section question">
+    <div class="container question__container">
+      <h2 class="question__title section-title">
+        Остались вопросы?
+      </h2>
+      <p class="question__subtitle">
+        Оставьте ваши данные и наш менеджер свяжется с вами
+      </p>
+      <form action="mail.php" method="POST" id="feedback-form" class="form question__form js-form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="form_subject" value="на нижней форме">
+        <!-- END Hidden Required Fields -->
+        <input type="text" name="username" required minlength="2" maxlength="15" class="input question__input"
+          placeholder="Ваше имя">
+        <input type="tel" name="userphone" required class="input question__input phone" placeholder="Ваш телефон">
+        <button class="btn question__button" data-submit>
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="logo">
+      <a href="#" class="logo__link">
+        <img class="logo__img" src="img/footer/logo.png" alt="Атмосфера чистоты">
+      </a>
+    </div>
+    <p class="footer__text">
+      © 2014 - 2020 Клининговая компания «Атмосфера чистоты». Все права защищены.
+    </p>
+    <div class="contacts">
+      <span class="contacts__city">
+        г. Самара
+      </span>
+      <a href="tel:+7(960)822-33-00" class="contacts__phone">
+        +7 (960) 822-33-00
+      </a>
+      <span class="contacts__time">
+        Круглосуточно без выходных
+      </span>
+    </div>
+  </footer>
+  <!-- modal -->
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button data-close class="modal-dialog__close" id="close">
+        &times;
+      </button>
+      <div class="modal-column">
+        <div class="modal-content">
+          <h2 class="section-title modal__title">
+            Узнайте точную стоимость уборки по телефону!
+          </h2>
+          <!-- /.section-title -->
+          <span class="section-subtitle modal__subtitle">
+            Заполните поля ниже - мы свяжемся с Вами
+          </span>
+          <!-- /.section-subtitle -->
+          <form action="mail.php" method="POST" id="feedback-form" class="form modal__form js-form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="form_subject" value="в модальном окне">
+            <!-- END Hidden Required Fields -->
+            <input type="text" name="username" required minlength="2" maxlength="15" class="input modal__input"
+              placeholder="Ваше имя">
+            <input type="tel" name="userphone" required class="input modal__input phone" placeholder="Ваш телефон">
+            <button class="btn modal__button">
+              Заказать звонок
+            </button>
+            <span class="modal__call">
+              Или Вы можете перезвонить нам сами по телефону:
+            </span>
+            <a href="tel:+7(8182)42-51-31" class="modal__phone">
+              +7 (960) 822-33-00
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- loader -->
+  <div id="loader">
+    <img src="img/loader/ripple.svg">
+  </div>
+<!-- thanks -->
+  <div class="modal-overlay">
+    <div id="overlay">
+      <p id="thx">
+        Спасибо! Мы обязательно вам перезвоним
+      </p>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

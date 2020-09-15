@@ -1,0 +1,50 @@
+.advantages
+  &__list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 0 15px
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 355px
+    text-align: center
+    
+  &__img
+    font-size: 50px
+    color: $accent
+    border: 4px solid $accent
+    border-radius: 50%
+    width: 115px
+    height: 115px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 35px
+    opacity: 0.83
+  &__subtitle
+    margin-bottom: 20px
+    text-transform: uppercase
+    font-size: 20px
+  &__text
+.fa-thumbs-o-up
+  font-weight: 800
+@media (max-width: 1094px)
+  .advantages
+    &__item
+      margin-bottom: 42px
+      &:nth-child(3)
+        margin: 0 auto
+@media (max-width: 768px)
+  .advantages
+    &__list
+      flex-direction: column
+      align-items: center
+
+@media (max-width: 478px)
+  .advantages
+    &__subtitle
+      font-size: 18px
+    &__text
+      font-size: 15px

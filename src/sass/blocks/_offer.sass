@@ -1,0 +1,73 @@
+.offer
+  position: relative
+.top-slider
+  outline: none
+  &__item
+    padding: 230px 0px 115px 0px
+    outline: none
+.slider-order
+  // background: url("../img/Header/header.jpg")
+  background: url("../img/header/head4.jpg")
+  // background-position: 0px 120%
+  background-attachment: fixed
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: cover
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 auto
+    background-color: $translucent
+    max-width: 873px
+    height: 462px
+    justify-content: center
+    border-radius: 10px
+    box-shadow: 0px 10px 26.1px 2.9px $shadow
+.top-slider
+  text-align: center
+  &__title
+    text-transform: uppercase
+    font-size: 38px
+    display: flex
+    flex-direction: column
+    margin-bottom: 7px
+    +bold
+    span
+      font-size: 26px
+      +reg
+  &__text
+    max-width: 480px
+    margin-bottom: 25px
+    line-height: 20px
+
+@media (max-width: 970px)
+  .slider-order
+    &__wrap
+      max-width: 80%
+      padding: 15px 50px
+@media (max-width: 824px)
+  .top-slider
+    &__title
+      font-size: 31px
+      span
+        font-size: 21px
+    &__text
+      font-size: 15px
+
+@media (max-width: 530px)
+  .top-slider
+    &__title
+      font-size: 30px
+      span
+        font-size: 20px
+@media (max-width: 478px)
+  .slider-order
+    &__wrap
+      padding: 15px 15px
+  .top-slider
+    &__title
+      font-size: 24px
+      span
+        font-size: 17px
+

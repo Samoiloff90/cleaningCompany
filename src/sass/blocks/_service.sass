@@ -1,0 +1,102 @@
+.service
+  &__title
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+  &__item
+    width: 336px
+    background-color: $main-light
+    border-radius: 10px
+    // margin-bottom: 45px
+    position: relative
+    margin: 0px 10px 45px 10px
+    &:hover
+      background-color: $main-light
+      transition: all .5s
+  &__info
+    padding: 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__headline
+    font-size: 20px
+    text-align: center
+    +bold
+  &__description
+    text-align: center
+    line-height: 20px
+    margin: 0px 0px 20px 0px
+    max-width: 290px
+  &__btn
+    text-transform: none
+  &__price
+    // width: 336px
+    height: 187px
+    border-radius: 10px
+    position: relative
+    &-number
+      border-radius: 0px 10px 10px 0px
+      background-color: $translucent
+      font-size: 17px
+      text-transform: uppercase
+      padding: 16px
+      position: absolute
+      bottom: 14px
+      left: -1px
+      +bold
+    &-window
+      background: url("../img/services/window.jpg") no-repeat top center
+    &-express
+      background: url("../img/services/express.jpg") no-repeat top center
+    &-weekly
+      background: url("../img/services/weekly.jpg") no-repeat top center
+    &-bathroom
+      background: url("../img/services/bathroom.jpg") no-repeat top center
+    &-general
+      background: url("../img/services/general.jpg") no-repeat top center
+    &-fridge
+      background: url("../img/services/fridge.jpg") no-repeat top center
+
+
+.service-wrap
+  position: absolute
+  z-index: 500
+  width: 100%
+  top: 95%
+  display: flex
+  flex-direction: column
+  align-items: center
+  visibility: hidden
+  opacity: 0
+  // display: none
+  border-top: 0
+  margin: 0px
+  transition: all .4s
+  background-color: $main-light
+  border-radius: 10px
+  padding: 0px 30px 30px 30px
+// Hover
+.service__item:hover
+  box-shadow: 0px 25px 28.71px 0.29px $shadow-dark
+  transition: all .5s
+.service__item:hover .service-wrap
+  visibility: visible
+  opacity: 1
+  // display: block
+  background-color: $main-light
+  box-shadow: 0px 25px 28.71px 0.29px $shadow-dark
+  transition: all .5s
+// .service__item:focus .service-wrap
+//   // display: block
+//   background-color: $main-light
+//   box-shadow: 0px 25px 28.71px 0.29px $shadow-dark
+//   transition: all .5s
+//   visibility: visible
+//   opacity: 1
+// .service__item:active .service-wrap
+//   // display: block
+//   background-color: $main-light
+//   box-shadow: 0px 25px 28.71px 0.29px $shadow-dark
+//   transition: all .5s
+  

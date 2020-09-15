@@ -1,0 +1,18 @@
+.footer
+  background-color: $main-dark
+  padding: 30px 15px
+  color: $main-light
+  display: flex
+  justify-content: space-around
+  align-items: flex-end
+  &__text
+    font-size: 15px
+    font-stretch: normal
+    line-height: 1.58
+    letter-spacing: normal
+
+@media (max-width: 1045px)
+  .footer
+    justify-content: space-between
+    &__text
+      display: none
